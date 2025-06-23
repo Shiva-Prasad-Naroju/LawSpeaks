@@ -6,21 +6,21 @@ Built with LangChain, FAISS, HuggingFace, Groq LLaMA3, and Streamlit.
 
 ## 🧠 Features:
 
-    - 🔍 **Ask Legal Questions** in natural language
+- 🔍 **Ask Legal Questions** in natural language
 
-    - 📄 **Document-backed answers** with accurate constitutional references
+- 📄 **Document-backed answers** with accurate constitutional references
 
-    - 🧩 Powered by **FAISS vector search + HuggingFace embeddings**
+- 🧩 Powered by **FAISS vector search + HuggingFace embeddings**
 
-    - 🤖 Uses **Groq's LLaMA3-70B-8192** via LangChain
+- 🤖 Uses **Groq's LLaMA3-70B-8192** via LangChain
 
-    - 🧾 **Clear, structured, and non-speculative responses**
+- 🧾 **Clear, structured, and non-speculative responses**
 
-    - 📖 Optional **context viewer** to see which document chunks were used
+- 📖 Optional **context viewer** to see which document chunks were used
 
-    - 🧠 **Prompt-engineered** to avoid hallucination & mislabeling of Articles
+- 🧠 **Prompt-engineered** to avoid hallucination & mislabeling of Articles
 
-    - 🌐 **Simple Streamlit UI** with sidebar filters and article highlights
+- 🌐 **Simple Streamlit UI** with sidebar filters and article highlights
 
 ## 📸 Result images:
 
@@ -33,82 +33,86 @@ Built with LangChain, FAISS, HuggingFace, Groq LLaMA3, and Streamlit.
 
 ### 1. Document Ingestion:
 
-    - 4 constitutional PDF files stored in the `data/` folder
+- 4 constitutional PDF files stored in the `data/` folder
 
-    - Loaded using `PyPDFLoader`
+- Loaded using `PyPDFLoader`
 
-    - Split into overlapping chunks using `RecursiveCharacterTextSplitter`
+- Split into overlapping chunks using `RecursiveCharacterTextSplitter`
 
 ### 2. Embedding & Vector DB:
 
-    - Embedding Model: `sentence-transformers/multi-qa-mpnet-base-dot-v1`
+- Embedding Model: `sentence-transformers/multi-qa-mpnet-base-dot-v1`
 
-    - Indexed using `FAISS` and stored locally in `vector_db_1/`
+- Indexed using `FAISS` and stored locally in `vector_db_1/`
 
 ### 3. RAG Pipeline (Query Phase):
 
-    - Embedding Model: `sentence-transformers/all-mpnet-base-v2`
+- Embedding Model: `sentence-transformers/all-mpnet-base-v2`
 
-    - Retrieval: Top-4 similar chunks (`k=4`) chosen after testing for best accuracy
+- Retrieval: Top-4 similar chunks (`k=4`) chosen after testing for best accuracy
 
-    - Language Model: `Groq’s LLaMA3-70B-8192`
+- Language Model: `Groq’s LLaMA3-70B-8192`
 
-    - Response generated only from retrieved context using a **structured legal prompt**
+- Response generated only from retrieved context using a **structured legal prompt**
 
 ### 4. Frontend:
 
-- Streamlit app with:
+Streamlit app with:
 
-  - 🧾 Text input for questions
+- 🧾 Text input for questions
 
-  - 🔎 Toggle for showing retrieved chunks
+- 🔎 Toggle for showing retrieved chunks
 
-  - 💬 Feedback section
+- 💬 Feedback section
 
-  - 📚 Sidebar filters for law categories
+- 📚 Sidebar filters for law categories
 
 
 ## ▶️ How to Run:
 
 ### 1. Clone the repo
-git clone https://github.com/Shiva-Prasad-Naroju/LawSpeaks.git
-cd LawGuide-AI
+
+- git clone https://github.com/Shiva-Prasad-Naroju/LawSpeaks.git
+
+- cd LawGuide-AI
 
 ### 2. Install dependencies
-pip install -r requirements.txt
+
+- pip install -r requirements.txt
 
 ### 3. Set your Groq API key in .env
-echo "GROQ_API_KEY=your-key-here" > .env
+
+- echo "GROQ_API_KEY=your-key-here" > .env
 
 ### 4. Create vector DB (only once)
-python main.py
+
+- python main.py
 
 ### 5. Launch the app
-streamlit run app.py
+
+- streamlit run app.py
 
 ## 🛡️ Limitations:
 
-    - Only answers based on the documents loaded.
+- Only answers based on the documents loaded.
 
-    - Returns: "Not found in the provided documents." if info is missing.
+- Returns: "Not found in the provided documents." if info is missing.
 
-    - No live access to external databases or court rulings.
-
----
+- No live access to external databases or court rulings.
 
 ## Tools Used:
 
-    - 🧠 LangChain
+- 🧠 LangChain
 
-    - ⚙️ FAISS
+- ⚙️ FAISS
 
-    - 🔤 HuggingFace Transformers
+- 🔤 HuggingFace Transformers
 
-    - 🚀 Groq LLaMA3-70B
+- 🚀 Groq LLaMA3-70B
 
-    - 🌐 Streamlit
+- 🌐 Streamlit
 
-    - 📚 Indian Constitution PDFs
+- 📚 Indian Constitution PDFs
 
 ## 📬 Feedback:
 
