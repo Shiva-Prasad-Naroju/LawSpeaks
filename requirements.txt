@@ -1,0 +1,14 @@
+langchain==0.1.16
+langchain-community==0.0.32
+langchain-groq==0.1.0
+langchain-huggingface==0.0.3
+
+sentence-transformers==2.6.1
+faiss-cpu==1.7.4
+
+streamlit==1.33.0
+python-dotenv==1.0.1
+pypdf
+
+streamlit-lottie
+# pip install pydantic==1.10.13
