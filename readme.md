@@ -70,11 +70,12 @@ Streamlit app with:
 
 ## ▶️ How to Run:
 
+
 ### 1. Clone the repo
 
 - git clone https://github.com/Shiva-Prasad-Naroju/LawSpeaks.git
 
-- cd LawGuide-AI
+- cd LawSpeaks
 
 ### 2. Install dependencies
 
