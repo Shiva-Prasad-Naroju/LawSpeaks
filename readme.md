@@ -22,9 +22,12 @@ Built with LangChain, FAISS, HuggingFace, Groq LLaMA3, and Streamlit.
 
     - 🌐 **Simple Streamlit UI** with sidebar filters and article highlights
 
-## 📸 Demo
+## 📸 Result images:
 
-![LawGuide Preview](https://via.placeholder.com/1000x400?text=LawGuide+AI+Demo+Preview)
+![results](results/law_result_1.png)
+
+![results](results/law_result_2.png)
+
 
 ## 🚀 How It Works:
 
