@@ -71,7 +71,7 @@ Built with LangChain, FAISS, HuggingFace, Groq LLaMA3, and Streamlit.
 ## ▶️ How to Run:
 
 ### 1. Clone the repo
-git clone https://github.com/yourname/LawGuide-AI
+git clone https://github.com/Shiva-Prasad-Naroju/LawSpeaks.git
 cd LawGuide-AI
 
 ### 2. Install dependencies
@@ -111,5 +111,7 @@ streamlit run app.py
     - 📚 Indian Constitution PDFs
 
 ## 📬 Feedback:
+
 Have suggestions or legal topics you'd like added?
+
 Drop your thoughts in the feedback section of the app or open an issue.
