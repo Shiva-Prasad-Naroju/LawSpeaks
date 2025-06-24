@@ -83,11 +83,11 @@ Streamlit app with:
 
 ### 3. Set your Groq API key in .env
 
-- echo "GROQ_API_KEY=your-key-here" > .env
+- GROQ_API_KEY= past_the_api_key_here
 
 ### 4. Create vector DB (only once)
 
-- python main.py
+- python main.py (this creates vector_db_1)
 
 ### 5. Launch the app
 
